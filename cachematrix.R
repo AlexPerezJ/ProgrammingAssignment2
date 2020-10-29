@@ -24,8 +24,8 @@ makeCacheMatrix <- function(m = matrix()){
 
 cacheSolve <- function(m, ...){
         matrix <- m$get()
-        i <- solve(matrix)
+        inv <- solve(matrix)
         m$SetInv(i)
-        i
+        inv
 }
 
